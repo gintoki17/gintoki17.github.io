@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Raleway,sans-serif;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    background-color: #be3144;
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    padding-right: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 2rem;
+    height: 100%;
+    font-size: 2rem;
+}
+nav a:hover{
+    background-color: #45567d;
+}
+.welcome-section{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);;
+    text-align: center;
+}
+.welcome-section {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height:800px; /* Set the height to 100% of the viewport height for centering */
+  }
+  .text {
+    text-align: center; /* Center the text inside .text element */
+  }
+  .text h1{
+    color: #fff;
+    font-size: 5rem;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  .text p{
+    font-size: 3rem;
+    color: #be3144;
+    font-weight: 200;
+    margin: 0 0;
+  }
+.projects-section{
+    text-align: center;
+    background-color: #45567d;
+    width: 100%;
+    padding: 10rem 2rem ;
+    
+}
+.projects-header{
+ color: #fff;
+ margin: 0 auto 6rem auto;
+ padding-bottom: 1rem;
+ font-size: 3.5rem;
+ max-width: 900px;
+ font-family: 'Raleway', sans-serif;
+ font-weight: 700;
+ border-bottom: 2px solid #fff;
+}
+.grid-template{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr)) ;
+    width: 100%;
+    max-width: 1280px;
+    grid-gap: 4rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+@media (max-width: 30.625em) {
+    .projects-section{
+      padding: 6rem 1rem;
+    }
+  
+    .projects-section .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+.project{
+    background: #3a3d40;
+    border-radius: 2px;
+}
+.code{
+    color: #3a3d40;
+    transition: color 0.3s ease-out;
+}
+.project:hover .code{
+ color: #ff7f50;
+}
+.grid-template a{
+text-decoration: none;
+color: #fff;
+}
+.project img{
+    width: 100%;
+    height: calc(100% - 6rem);
+    object-fit: cover;
+}
+.project p{
+    margin: 0;;
+}
+.project-title{
+    background: #3a3d40;
+    font-size: 1.5rem;
+    font-family: Raleway,sans-serif;
+    padding: 1.5rem 0.5rem;
+}
+.projects-section .btn{
+    text-decoration: none;
+    margin-top: 5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    font-size:2rem;
+    background-color: #3a3d40;
+    padding: 1rem 2rem;
+    color: #fff;
+    display: inline-block;
+    
+}
+
+i.fas {
+    color: #fff;
+    padding: 3px;
+    transition: transform 0.3s ease; /* Add a transition for the transform property */
+  }
+  .btn:hover i.fas{
+    transform: translateX(5px); 
+  }
+  .btn:hover {
+    background-color: #be3144;
+    transition: background-color 0.3s ease-out;
+}
+  
+.contact{
+    background-color:#303841 ;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact h1{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.contact p{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 0;
+}
+.icons{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+}
+hr{
+    margin: 0;
+    border: 2px solid #be3144;
+}
+
+footer{
+    background-color: #303841;
+    ;
+    height: 100px;
+    color: #fff;
+    padding: 5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .grid-template {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on screens wider than 768px */
+    }
+  }
+@media screen and (max-width:968px) {
+    nav{
+        text-align: center;
+    }
+}
