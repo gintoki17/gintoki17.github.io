@@ -211,13 +211,16 @@ footer{
         text-align: center;
     }
     .contact h1{
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
     .contact p{
         font-size: 1.7rem;
     }
     .icons{
         font-size: 1.7rem;
+    }
+    .projects-header{
+        font-size: 2.5rem;
     }
 }
 @media screen and (max-width:680px){
@@ -229,6 +232,9 @@ footer{
     }
     .text p{
         font-size: 3.2rem;
+    }
+    .projects-header{
+        font-size: 1.9rem;
     }
 }
 @media screen and (max-width:536px){
@@ -263,6 +269,9 @@ footer{
         font-size: 1.2rem;
         padding: 0;
     }
+    .projects-header{
+        font-size: 1.5rem;
+    }
 }
 @media screen and (max-width:430px){
     .text h1{
@@ -288,5 +297,8 @@ footer{
         padding: 1rem 0.5rem ;
         text-align: center;
         font-size: 1rem;
+    }
+    .projects-header{
+        font-size: 1.1rem;
     }
 }
