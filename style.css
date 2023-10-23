@@ -181,6 +181,10 @@ i.fas {
     color: #fff;
     display: inline-block;
     padding: 1rem;
+    transition: transform 0.3s ease;
+}
+.icons a:hover{
+    transform: translateY(-5px);
 }
 hr{
     margin: 0;
